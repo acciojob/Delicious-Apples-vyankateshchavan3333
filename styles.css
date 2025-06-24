@@ -1,1 +1,139 @@
 /* your code here */
+html,body{
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: #10e27e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    overflow: visible;
+    border-radius: 5px;
+}
+.product__info{ /*second child */
+    position: relative;
+    padding:10px;
+    width:55%;
+    height:100%;
+    box-sizing: border-box;
+}
+.product__photo{ /*child one */
+    background-color:white;
+    width: 55%;
+    height: 75%;
+    margin-left: -40px;  /*here we are not using postion because it is over lapping in absolute and taking gap in relative*/
+     margin-top: 40px;
+     z-index: 3;
+     border: 1px solid #ccc;
+     z-index: 1;
+     border-radius: 5px;
+}
+.photo-container{
+     
+     width: 100%;
+     height: 100%;
+     background-color: #bdec4f;
+     z-index: 2;
+     border-radius: 5px;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+}
+.photo-main img{
+  margin-left: -65px;
+    height: 100%;
+
+}
+.photo-album ul{
+    display: flex;
+    list-style: none;
+
+}
+.photo-album li img{
+    width: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+     border: 1px solid #ccc;
+   
+    margin-left: 10px;
+}
+
+/* -------------------------- */
+
+.title{
+    position: relative;
+    top: 35px;
+    left: 10px;
+}
+.title span{
+    position: absolute;
+    top:25px;
+    font-size: 7px;
+}
+.price{
+    position: absolute;
+    top: 120px;
+    color:red;
+}
+.price span{
+    font-size: 50px;
+}
+
+.variant{
+    
+    position: absolute;
+    top:190px;
+}
+.variant h3{
+    font-size: 15px;
+    color: rgba(186,186,186,255);
+}
+.variant ul{
+    display: flex;
+    list-style: none;
+}
+.variant li img {
+    width: 35px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    margin-left: 1px;
+    position: relative;
+    right: 30px;
+
+}
+.variant li img:hover{
+    transform: scale(1.1);
+    transition: 0.30s; 
+}
+.description h3{
+   font-size: 15px;
+    color: rgba(186,186,186,255);  
+    position: absolute;
+    bottom: 160px;
+}
+.description ul{
+    position: absolute;
+    bottom: 80px;
+    font-size:14px;
+}
+button{
+    background-color: red;
+    color: white;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    border-radius: 5px;
+}
